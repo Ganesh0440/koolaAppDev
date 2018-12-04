@@ -1,3 +1,29 @@
-h2{
-    color:red !important;
+body {
+	margin: 0;
+	padding-top: 0px;
+	font-family: "adobe-clean";
+}
+h2 {
+	display: inline;
+}
+.header-search {
+	    border-radius: 0 8px 8px 0;
+}
+
+
+label {
+	margin-bottom: 40px;
+}
+.selectWrapper{
+  border-radius:24px;
+  display:inline-block;
+  overflow:hidden;
+  background:#cccccc;
+  border:1px solid #cccccc;
+}
+.selectBox{
+  width:636px;
+  height:72px;
+  border:0px;
+  outline:none;
 }
