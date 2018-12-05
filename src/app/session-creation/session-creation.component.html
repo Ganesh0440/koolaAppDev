@@ -1,13 +1,17 @@
 <nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" href="#">KOOLA</a>
+  <div class="logo">
+      <a class="navbar-brand logo" href="">Koola</a>
+  </div>
 
   <div class="collapse navbar-collapse " id="navbarSupportedContent">
       <form >
           <div class="form-group input-group mb-3">
-              <input type="search" class="form-control" placeholder="Search for sport,level and organisation.."><i class="ionicons ion-ios-mic-outline"></i>
-                  <div class="input-group-append">
-                      <input type="submit" class="input-group-button btn" value="SEARCH">
-                  </div>
+              <input type="search" class="form-control" placeholder="Search for sport,level and organisation..">
+              <!-- <span>&#XF130;</span> -->
+              <span><i class="fa fa-microphone"></i></span>
+              <div class="input-group-append">
+                  <input type="submit" class="input-group-button btn search-btn" value="SEARCH">
+              </div>
           </div>  
       </form>
   </div> 
@@ -18,14 +22,15 @@
   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 </nav>
 <!-- End of Navigation -->
-<div class="container-fluid">
+<div class="container-fluid mr-left mr-right">
   <div class="row">
       <div class="col-sm-12 col-md-6 col-lg-6">
           <div>
               <form action="#">
-                  <div class="form-group">
-                      <label for="">Pick a sport from your offerings</label>
-                      <select class="form-control" id="" name="">
+                  <p for="">Pick a sport from your offerings</p>
+                  <div class="form-group selectWrapper">
+                      
+                      <select class="form-control selectBox" id="" name="">
                           <option selected>Search and press enter</option>
                           <option value="">2</option>
                           <option value="">3</option>
@@ -34,7 +39,7 @@
                   </div>
                   <div class="form-group">
                       <label for="">Give an awesome title to your session..</label>
-                          <input type="text" class="form-control" id="usr" placeholder="Title goes here...">
+                          <input type="text" class="form-control session-title" id="usr" placeholder="Title goes here...">
                   </div>
                   <div class="d-flex flex-wrap container">
                       <div class="row flex-fill">
@@ -44,7 +49,7 @@
                       </div>
                       <div class="row">
                           <div><p>Assistant Coaching by <a href=""><span class="yellow-text">Daniel</span>&or;</a></p></div>
-                          <button class="btn">+ Add more coach</button>
+                          <button class="btn add-coach-btn">+ ADD MORE COACH</button>
                       </div>
                   </div>
                   <div class="gender d-flex">
@@ -62,9 +67,11 @@
                           </label>
                       </div>
                   </div>
-                  <div class="form-group">
-                      <label for="">Amenities available during the session....</label>
-                      <select class="form-control" id="" name="">
+
+                  <p for="">Amenities available during the session....</p>
+                  <div class="form-group selectWrapper">
+                      
+                      <select class="form-control selectBox" id="" name="">
                           <option selected>Search and press enter</option>
                           <option value="">2</option>
                           <option value="">3</option>
@@ -75,37 +82,38 @@
                     
                   </div>
                   <hr>
-                  <div class="form-group">
-                      <label for="">Group size & ticket rates</label>
-                          <select class="form-control" id="" name="">
+                  <div>
+                  <p for="">Group size & ticket rates</p>
+                  <div class="form-group selectWrapper">
+                          <select class="form-control selectBox" id="" name="">
                           <option selected>No. of tickets..</option>
                           <option value="">2</option>
                           <option value="">3</option>
                           <option value="">4</option>
                           </select>
-                      <div class="form-group">
-                          <input type="text" class="form-control" id="email" value="$120">
-                      </div>
+                      
                   </div>
+                  <!-- <div class="form-group "> -->
+                      <input type="text" class="form-control ticket-cost" id="" value="$120">
+                  <!-- </div> -->
+                </div>
                    <hr>
                   <div class="about-coach">
                       <h4>A little about you as a coach..</h4>
-                      <p class="about-coach-description" style="border: 1px solid black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rem facere doloribus delectus, reiciendis ipsum itaque placeat, eveniet perferendis vel molestiae impedit magnam. 
-                          Sapiente, distinctio. Laboriosam accusamus odio architecto minus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rem facere doloribus delectus, reiciendis ipsum itaque placeat, eveniet perferendis vel molestiae impedit magnam. 
-                          Sapiente, distinctio. Laboriosam accusamus odio architecto minus.</p>
+                      <textarea class="form-control description-about-coach br-1" rows="5" id="description" placeholder="Description about coach.."></textarea>
                   </div>
                   <hr>
                   <div class="small-description">
                       <div class="form-group">
                               <label for="description">A small description on what they will be doing..</label>
-                              <textarea class="form-control" rows="5" id="description" placeholder="A short description..."></textarea>
+                              <textarea class="form-control br-1" rows="5" id="description" placeholder="A short description..."></textarea>
                       </div>
                   </div>
                   <hr>
                   <div class="special-notes">
                       <div class="form-group">
                               <label for="special-note">Special Notes if any..</label>
-                              <textarea class="form-control" rows="5" id="special-note" placeholder="Your special notes for the session..."></textarea>
+                              <textarea class="form-control br-1" rows="5" id="special-note" placeholder="Your special notes for the session..."></textarea>
                       </div>
                   </div>
                   <hr>
@@ -116,17 +124,20 @@
               </form>	
           </div>
       </div>	
-      <div class="col-sm-12 col-md-4 col-lg-4">
+      <div class="col-sm-12 col-md-6 col-lg-6">
           <div class="session-locations">
-              <div class="form-group">
-                  <label for=""><h6>Locations where the session are held..</h6></label>
-                      <select class="form-control" id="" name="">
+              <p for="">Locations where the session are held..</p>
+              <div class="form-group selectWrapper">
+                  
+                      <select class="form-control selectBox" id="" name="">
                           <option value="">MMC football grounds, Muthuswamy Rd..</option>
                           <option value="">2</option>
                           <option value="">3</option>
                           <option value="">4</option>
                       </select>
-                      <select class="form-control" id="" name="">
+              </div>
+              <div class="form-group selectWrapper">
+                      <select class="form-control selectBox" id="" name="">
                           <option value="">Court no. 14</option>
                           <option value="">2</option>
                           <option value="">3</option>
@@ -196,75 +207,26 @@
                       </label>
                   </div>
               </div>
-              <div class="form-group">
-                      <span for="">Type</span>
-                      <select class="form-control type" id="type" name="">
-                          <option selected>Master</option>
-                          <option value="">2</option>
-                          <option value="">3</option>
-                          <option value="">4</option>
-                      </select>
+              <div>
+                  <span for="">Type</span>
+                <div class="form-group selectWrapper">
+                        <select class="form-control type selectBox" id="type" name="">
+                            <option selected>Master</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                </div>
               </div>
           </div>
           <div class="session-happening">
-              <h5>When is the session happening..</h5>
-              <div>
-                  <div class="form-check-inline">
-                          <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="optradio">One Time
-                          </label>
-                  </div>
-                  <div class="form-check-inline">
-                          <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="optradio">Everyday
-                          </label>
-                  </div>
-                  <div class="form-check-inline">
-                          <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="optradio">Weekly
-                          </label>
-                  </div>
-                  <div class="form-check-inline">
-                          <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="optradio">Bi-Weekly
-                          </label>
-                  </div>
-              </div>
-              <div>
-                  <div class="form-check-inline">
-                          <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="optradio">Monthly
-                          </label>
-                  </div>
-                  <div class="form-check-inline">
-                          <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="optradio">Quarterly
-                          </label>
-                  </div>
-                  <div class="form-check-inline">
-                          <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="optradio">Half Yearly
-                          </label>
-                  </div>
-                  <div class="form-check-inline">
-                          <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="optradio">Annually
-                          </label>
-                  </div>
-              </div>
-              <div class="month-calender" style="width:486px;height:417px; border: 1px solid black;">
-                  
-              </div>
-              <div class="startend-time">
-                  <h5>Start time & End time</h5>
-                  <input type="time" class="btn btn-light btn-lg" value="12:30 PM">
-                  <input type="time" class="btn btn-light btn-lg" value="12:30 PM">
-                  <button type="button" class="btn btn-light">ADD 1 MORE</button>
-              </div>
+              
+              
+              
           </div>
           <!-- 2 column end -->
       </div>
-      <aside>
+      <!-- <aside>
           <ul id="side-nav-icons" class="side-nav" style="border: 1px solid black;">
               <li><a href=""><img src="https://picsum.photos/97/141" alt=""></a></li>
               <hr>
@@ -284,13 +246,13 @@
               <hr>
               <li>X</li>
           </ul>
-      </aside>
+      </aside> -->
   </div>
   <hr>
 </div>
 <!-- End of 2 layout coloumn -->
 <section class="thumbnails">
-  <div class="container-fluid">
+  <div class="container-fluid mr-left mr-right">
   <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
               <form action="/action_page.php">
@@ -312,7 +274,7 @@
               
               <div class="row text-center">
                   <div class="col-lg-12 col-md-12 col-sm-12">
-                      <button type="button" class="btn btn-light btn-lg draft-btn" id="save-to-draft">SAVA TO DRAFT</button>
+                      <button type="button" class="btn btn-light btn-lg draft-btn" id="save-to-draft">SAVE TO DRAFT</button>
                       <button type="button" class="btn btn-light btn-lg preview-btn" id="preview">PREVIEW</button>
                       <button type="button" class="btn btn-light btn-lg publish-btn" id="publish">PUBLISH</button>
                   </div>
@@ -323,7 +285,7 @@
 </section>
 <!-- End of Thumbnails -->
 <section class="Sessions">
-  <div class="container-fluid">
+  <div class="container-fluid mr-left mr-right">
       <div class="row">
           <h5>Past Sessions</h5>
           <nav aria-label="Page navigation justify-content-end ">
