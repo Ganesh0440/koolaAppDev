@@ -5,7 +5,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import { AgmCoreModule } from '@agm/core';
 import { FormsModule } from '@angular/forms';
 
 
@@ -13,7 +12,7 @@ import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent
-    
+
   ],
   imports: [
     BrowserModule,
@@ -21,7 +20,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     AppRoutingModule,
     AngularFontAwesomeModule
-   
+
   ],
   providers: [],
   bootstrap: [AppComponent]
