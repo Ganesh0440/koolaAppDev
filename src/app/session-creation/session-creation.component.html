@@ -4,16 +4,20 @@
   </div>
 
   <div class="collapse navbar-collapse " id="navbarSupportedContent">
-      <form >
+      
+      <form method="">
           <div class="form-group input-group mb-3">
-              <input type="search" class="form-control" placeholder="Search for sport,level and organisation..">
+              <input type="search" class="form-control nav-searchbox" placeholder="Search for sport,place,level and organisation..">
               <!-- <span>&#XF130;</span> -->
-              <span><i class="fa fa-microphone"></i></span>
-              <div class="input-group-append">
-                  <input type="submit" class="input-group-button btn search-btn" value="SEARCH">
-              </div>
+              <span class="input-group-addon">
+                  <i class="fa fa-microphone"></i>
+                  <span class="search-btn-padding">
+              <button type="submit" class="btn btn-sm search-btn">Search</button>
+            </span>
+            </span>
           </div>  
       </form>
+    
   </div> 
 
   <div class="nav-item">
@@ -27,11 +31,11 @@
       <div class="col-sm-12 col-md-6 col-lg-6">
           <div>
               <form action="#">
-                  <p for="">Pick a sport from your offerings</p>
+                    <p>Pick a sport from your offerings</p>
                   <div class="form-group selectWrapper">
-                      
+                        
                       <select class="form-control selectBox" id="" name="">
-                          <option selected>Search and press enter</option>
+                          <option >Search and press enter</option>
                           <option value="">2</option>
                           <option value="">3</option>
                           <option value="">4</option>
@@ -42,14 +46,37 @@
                           <input type="text" class="form-control session-title" id="usr" placeholder="Title goes here...">
                   </div>
                   <div class="d-flex flex-wrap container">
-                      <div class="row flex-fill">
-                          <div><p>Sports experience Coaching by <a href=""><span class="yellow-text">Daniel </span>&or;</a></p></div>
-                          <div><p>Organised by <a href=""><span class="yellow-text">Add an organisation +</span></a></p></div>
-                          <div class="coach-img"><img src="" alt=""></div>
-                      </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                    <p>Sports experience Coaching by</p>
+                                        <div class="form-group">
+                                            <select class="form-control coach-assistCoach" id="" name="">
+                                                <option selected>Daniel</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                            </select>
+                                        </div> 
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="organisation"><p>Organised by <a href=""><span class="yellow-text">Add an organisation +</span></a></p></div>
+                                <div class="coach-img"><img src="" alt=""></div>
+                            </div>  
+                        </div>
                       <div class="row">
-                          <div><p>Assistant Coaching by <a href=""><span class="yellow-text">Daniel</span>&or;</a></p></div>
-                          <button class="btn add-coach-btn">+ ADD MORE COACH</button>
+                            <div>
+                              <p>Assistant Coaching by</p>
+                                    <span class=""><select class="form-control coach-assistCoach yellow-text" id="" name="">
+                                        <option selected>Daniel</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                        </select>
+                                    </span>
+                                
+                                <button class="btn add-coach-btn">+ ADD MORE COACH</button>
+                            </div>
+                          
                       </div>
                   </div>
                   <div class="gender d-flex">
@@ -70,7 +97,6 @@
 
                   <p for="">Amenities available during the session....</p>
                   <div class="form-group selectWrapper">
-                      
                       <select class="form-control selectBox" id="" name="">
                           <option selected>Search and press enter</option>
                           <option value="">2</option>
@@ -78,7 +104,7 @@
                           <option value="">4</option>
                       </select>
                   </div>
-                  <div class="crossed-icons" style="width:707px; height:113px; border: 1px solid black;">
+                  <div class="crossed" id="amenities-icons">
                     
                   </div>
                   <hr>
@@ -100,7 +126,7 @@
                    <hr>
                   <div class="about-coach">
                       <h4>A little about you as a coach..</h4>
-                      <textarea class="form-control description-about-coach br-1" rows="5" id="description" placeholder="Description about coach.."></textarea>
+                      <textarea class="form-control description-about-coach br-1" rows="9" id="description" placeholder="Description about coach.."></textarea>
                   </div>
                   <hr>
                   <div class="small-description">
@@ -144,7 +170,7 @@
                           <option value="">4</option>
                       </select>
               </div>
-              <div class="session-location-map" id="location-map" style="height:373px; width:487px; border:1px solid black;">
+              <div class="session-location-map" id="location-map" style="height:373px; width:85%; border:1px solid black;">
                   
               </div>
               
@@ -207,16 +233,18 @@
                       </label>
                   </div>
               </div>
-              <div>
-                  <span for="">Type</span>
-                <div class="form-group selectWrapper">
-                        <select class="form-control type selectBox" id="type" name="">
-                            <option selected>Master</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                            <option value="">4</option>
-                        </select>
-                </div>
+              <div class="type" id="">
+                    <div>
+                    <h6 for="">Type</h6>
+                    </div>
+                    <div class="form-group selectWrapper">
+                            <select class="form-control type selectBox" id="type" name="">
+                                <option selected>Master</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+                    </div>
               </div>
           </div>
           <div class="session-happening">
@@ -258,7 +286,7 @@
               <form action="/action_page.php">
                   <div class="form-group">
                       <label for="thumbnail">Choose a Thumbnail for a session..</label>
-                      <input type="text" class="form-control" id="session-thumbnail" placeholder="Search..">
+                      <input type="text" class="form-control thumbnail-search" id="session-thumbnail" placeholder="Search..">
                   </div>
               </form>
               <div class="d-flex flex-wrap justify-content-space mb-3">
@@ -276,7 +304,7 @@
                   <div class="col-lg-12 col-md-12 col-sm-12">
                       <button type="button" class="btn btn-light btn-lg draft-btn" id="save-to-draft">SAVE TO DRAFT</button>
                       <button type="button" class="btn btn-light btn-lg preview-btn" id="preview">PREVIEW</button>
-                      <button type="button" class="btn btn-light btn-lg publish-btn" id="publish">PUBLISH</button>
+                      <button type="button" class="btn btn-light btn-lg publish-btn active" id="publish">PUBLISH</button>
                   </div>
               </div>
           </div>
@@ -287,36 +315,39 @@
 <section class="Sessions">
   <div class="container-fluid">
       <div class="row">
-          <h5>Past Sessions</h5>
-          <nav aria-label="Page navigation justify-content-end ">
-                  <ul class="pagination">
-                      <li class="page-item"><a class="page-link" href="#">See all</a></li>
-                      <li class="page-item">
-                          <a class="page-link" href="#" aria-label="Next">
-                          <span aria-hidden="true">&gt;</span>
-                          <span class="sr-only">Next</span>
-                          </a>
-                      </li>
-                  </ul>
+            <h4>Past sessions</h4>
+            <nav aria-label="Page navigation">
+          
+            <ul class="pagination justify-content-end">
+              
+              <li class="page-item"><a class="page-link" href="#">See all</a></li>
+              
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&gt;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+                </li>
+            </ul>
           </nav>
       </div>
       <div class="row">
               <div class="d-flex flex-wrap justify-content-space mx-3">
                   <div class="card-deck">
-                  <div class="card">
-                      <img class="card-img-top" src="https://picsum.photos/318/241" alt="Card image">
-                          <div class="card-body">
-                              <h4 class="card-title">BASKETBALL</h4>
-                              <p class="card-text">Dunk practice sessions for amaterus</p>
-                              <p>$120 per person</p>
-                          </div>
-                  </div>
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/318/241" alt="Card image">
+                            <div class="card-body">
+                                <h6 class="card-title">BASKETBALL</h6>
+                                <p class="card-text">Dunk practice sessions for amaterus</p>
+                                <p>$120 per person</p>
+                            </div>
+                    </div>
           
               
                       <div class="card">
                           <img class="card-img-top" src="https://picsum.photos/318/241" alt="Card image">
                               <div class="card-body">
-                                  <h4 class="card-title">BASKETBALL</h4>
+                                    <h6 class="card-title">BASKETBALL</h6>
                                   <p class="card-text">Dunk practice sessions for amaterus</p>
                                   <p>$120 per person</p>
                               </div>
@@ -326,7 +357,7 @@
                       <div class="card">
                           <img class="card-img-top" src="https://picsum.photos/318/241" alt="Card image">
                               <div class="card-body">
-                                  <h4 class="card-title">BASKETBALL</h4>
+                                    <h6 class="card-title">BASKETBALL</h6>
                                   <p class="card-text">Dunk practice sessions for amaterus</p>
                                   <p>$120 per person</p>
                               </div>
@@ -336,7 +367,7 @@
                   <div class="card">
                       <img class="card-img-top" src="https://picsum.photos/318/241" alt="Card image">
                           <div class="card-body">
-                              <h4 class="card-title">BASKETBALL</h4>
+                                <h6 class="card-title">BASKETBALL</h6>
                               <p class="card-text">Dunk practice sessions for amaterus</p>
                               <p>$120 per person</p>
                           </div>
@@ -348,19 +379,28 @@
 </section>
 <!-- End of Past sessions -->
 <footer id="footer">
-  <div class="container-fluid">
+  <div class="container-fluid footer-mr">
       <div class="row d-flex">
           <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-              <p>Copyright &copy; 2017. Primitive Group.</p>
+              <p class="footer-copyrights">Copyright &copy; 2017. Primitive Group.</p>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 justify-content-end">   
-              <ul class="list-inline">
-                  <li class="list-inline-item"><a href="#" target="_blank">Privacy Policy</a></li>
-                  <li class="list-inline-item"><a href="#" target="_blank">Terms & Conditions</a></li>
-                  <li class="list-inline-item"><a href="#" target="_blank">Support</a></li>
-                  <li class="list-inline-item"><a href="#" target="_blank">Contact</a></li>
-                  
-              </ul>
+                <nav class="navbar navbar-expand-sm justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                           <a class="nav-link footer-links" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link footer-links" href="#">Terms & Conditions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link footer-links" href="#">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link footer-links" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
           </div>
       </div>
   </div>

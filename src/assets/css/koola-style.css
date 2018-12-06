@@ -10,7 +10,7 @@ body {
 }
 /* Global Properties */
 a:hover {
-    text-decoration: none;
+    text-decoration: none!important;
 }
 .logo {
     font-weight: 700;
@@ -37,14 +37,49 @@ label {
     height: calc(2.25rem + 2px)!important;
     border: 0px;
     outline: none;
-    padding: 2rem .75rem!important;
+    /* padding: 2rem .75rem!important; */
     box-shadow: 1px 1px 18px #888888!important; 
   }
+  .nav-searchbox {
+    border-right-style: none!important;
+    border-top-left-radius: 1.25rem!important;
+    border-bottom-left-radius: 1.25rem!important;
+    width: 500px;
+  }
+  .input-group-addon i {
+    /* border: 1px #dde1e5; */
+    border-top-style: solid;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-width: 1px 0 1px 0;
+    border-color: #d2d8dd #fff ;
+    padding: 0.6rem;
+
+  }
+  .search-btn-padding {
+      padding: 5px 10px 7px 10px;
+      border-top-style: solid;
+    border-right-style: solid!important;
+    border-bottom-style: solid;
+    border-left-style: none;
+      border-width: 1px 1px 1px 0;
+      border-color: #d2d8dd!important;
+      margin-left: -0.3rem;
+
+  }
 .search-btn {
-    background-color: #ffce00;
+    padding: .1rem 1.5rem!important;
+    border-radius: 1.2rem!important;
+    background-color: #ffce00!important;
 }
 .yellow-text {
     color: #ffdb48;
+}
+.coach-assistCoach {
+    outline: none;
+    border: none!important;
+    color: #ffdc63!important;
 }
 .session-title {
     padding-bottom: 8px!important;
@@ -56,11 +91,19 @@ label {
     border-radius: 0!important;  
 }
 input[type="text"].session-title:focus,
-input[type="text"].ticket-cost:focus {
+input[type="text"].ticket-cost:focus,
+input[type="text"].thumbnail-search:focus,
+input[type="search"].nav-searchbox:focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
+  box-shadow: none!important;
   outline: 0!important;
-  border-color: #dde1e5;
+  border-color: #dde1e5!important;
+}
+textarea:focus {
+    -webkit-box-shadow: none;
+  box-shadow: none!important;
+  outline: 0!important;
+  border-color: #dde1e5!important;   
 }
 .add-coach-btn {
     background-color: #fff;
@@ -72,7 +115,12 @@ input[type="text"].ticket-cost:focus {
     font-size: 0.5em!important;
     letter-spacing: 1.5px;
 }
-.ticket-cost {
+.crossed {
+    width: 100%;
+    height: 85px;
+    border: 1px solid black;
+}
+.ticket-cost,.thumbnail-search {
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
     -ms-border-radius: 40px;
@@ -85,6 +133,7 @@ input[type="text"].ticket-cost:focus {
     height: calc(3.25rem + 2px)!important;
     margin-bottom: 0px!important;
     box-sizing: border-box;
+    padding: 2rem!important;
   }
   .br-1 {
       border-radius: 1rem!important;
@@ -95,4 +144,39 @@ input[type="text"].ticket-cost:focus {
     box-shadow: none;
     outline: 0!important;
     border-color: #dde1e5!important;
+  }
+  .draft-btn,.preview-btn,.publish-btn {
+    font-size: 1.25rem!important;
+    line-height: 1.5!important;
+    border-radius: 3.3rem!important;
+    margin: 1rem 0.4rem;
+    color: #616161!important;
+    background-color: #fff!important;
+    border-color: #a1a3a5!important;
+  }
+  .draft-btn {
+      padding: 0.8rem 3rem!important;
+  }
+  .preview-btn,.publish-btn {
+      padding: 0.8rem 4rem!important;
+  }
+  .active {
+      background-color: #ffce00!important;
+      border: none!important;
+  }
+  /* .footer-mr {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+  } */
+  .footer-copyrights {
+      margin: 1.6rem 0 1.6rem 0.5rem;
+      color: #cecece;
+      font-size: 0.8rem;
+  }
+  .footer-links{
+    padding-right: .5rem!important;
+    padding-left: .5rem!important;
+    margin: 0.7rem!important;
+    color: #292929!important;
+   
   }
