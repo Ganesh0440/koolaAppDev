@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-session-creation',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SessionCreationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
+
+  public saveToDraft(event) {
+
+  }
+  public sessionPreview(event) {
+    this.router.navigate(['session-details']);
+  }
+  public publishSession(event) {
+
+  }
+
 
 }
