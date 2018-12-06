@@ -145,7 +145,7 @@ textarea:focus {
     outline: 0!important;
     border-color: #dde1e5!important;
   }
-  .draft-btn,.preview-btn,.publish-btn {
+  .draft-btn,.preview-btn,.publish-btn,.edit-btn {
     font-size: 1.25rem!important;
     line-height: 1.5!important;
     border-radius: 3.3rem!important;
@@ -160,6 +160,10 @@ textarea:focus {
   .preview-btn,.publish-btn {
       padding: 0.8rem 4rem!important;
   }
+  .edit-btn {
+      padding: 0.8rem 2.5rem!important;
+      color: #5c5539;
+  } 
   .active {
       background-color: #ffce00!important;
       border: none!important;
