@@ -1,7 +1,7 @@
 import { AgmCoreModule } from '@agm/core';
 import { GooglemapsComponent } from './../googlemaps/googlemaps.component';
 import { NgModule } from '@angular/core';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 import { SessionCreationRoutingModule } from './session-creation-routing.module';
 import { SessionCreationComponent } from './session-creation.component';
@@ -10,7 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MainComponent } from './../main/main.component';
 import { OnetimecalenderComponent } from './../onetimecalender/onetimecalender.component';
 import { DatePipe } from '@angular/common';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import { EverydayComponent } from './../everyday/everyday.component';
 import { TimepickerModule } from 'ngx-bootstrap/timepicker';
@@ -34,8 +34,7 @@ import { MultiDatePickerComponent } from './../multi-date-picker/multi-date-pick
     OwlDateTimeModule,
     OwlNativeDateTimeModule,
     TimepickerModule.forRoot(),
-
-    BrowserAnimationsModule,
+    NgbModule.forRoot(),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAyKLOJj9p_nzvYhSV4aR3JyIKnkjKdx0Y'
 
