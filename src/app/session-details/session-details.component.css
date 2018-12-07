@@ -1,3 +1,22 @@
+.session-details-paras {
+    font-size: 1.2rem;
+    color: #808080;
+}
+.session-details-para-font {
+    font-size: 1.4rem;
+    color: #808080;
+}
+.edit-btn {
+    margin-left: 13rem;
+}
+.person-ticket-cost {
+    position: relative;
+}
+.save-to-favorite {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
 .session-location-map {
     height:373px; 
     width:100%;
@@ -11,6 +30,7 @@
     margin-top: 0.8rem;
     list-style: none;
     font-weight: 500;
+    font-size: 1.05rem;
 }
 ul.custom-breadcrumb li+li:before {
     padding: 0.25rem;
