@@ -4,10 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 //import { AuthGuard } from './shared/guard/auth.guard';
 
 const routes: Routes = [
-  { path: '', loadChildren: './session-creation/session-creation.module#SessionCreationModule' },
-  { path: 'session-creation', loadChildren: './session-creation/session-creation.module#SessionCreationModule' },
-  { path: 'session-details', loadChildren: './session-details/session-details.module#SessionDetailsModule' },
-  { path: 'session-edit', loadChildren: './session-edit/session-edit.module#SessionEditModule' }
+  { path: '', loadChildren: './session/session.module#SessionModule' },
+  { path: 'session', loadChildren: './session/session.module#SessionModule' }
 ];
 
 @NgModule({

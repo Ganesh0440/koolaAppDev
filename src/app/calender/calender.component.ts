@@ -1,19 +1,18 @@
-import { Utils } from './../custom/Utils';
-import { QuarterlyModel } from './../models/quarterlyModel';
+import { EveryDayModel } from './models/everydaymodel';
 import { Component, OnInit } from '@angular/core';
+import { Utils } from './custom/Utils';
+import { QuarterlyModel } from './models/quarterlyModel';
 import { NgForm } from '@angular/forms';
 import { DatePipe } from '@angular/common';
-import { CalenderModel } from '../models/calender';
-import { OportunityInstance } from '../models/oppertunityInstance';
-import { EveryDayModel } from '../models/everyDayModel';
-
+import { CalenderModel } from './models/calender';
+import { OportunityInstance } from './models/oppertunityInstance';
 
 @Component({
-  selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.css']
+  selector: 'app-calender',
+  templateUrl: './calender.component.html',
+  styleUrls: ['./calender.component.css']
 })
-export class MainComponent implements OnInit {
+export class CalenderComponent implements OnInit {
   public start_time = null;
   public end_time = null;
   public message = '';
@@ -259,6 +258,4 @@ export class MainComponent implements OnInit {
       }
     }
   }
-
-
 }
