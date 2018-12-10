@@ -182,5 +182,6 @@ textarea:focus {
     padding-left: .5rem!important;
     margin: 0.7rem!important;
     color: #292929!important;
-   
+    font-size: 0.9rem!important;
   }
+  
