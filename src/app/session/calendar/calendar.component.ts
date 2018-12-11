@@ -1,5 +1,5 @@
-import { EveryDayModel } from './models/everydaymodel';
 import { Component, OnInit } from '@angular/core';
+import { EveryDayModel } from './models/everydaymodel';
 import { Utils } from './custom/Utils';
 import { QuarterlyModel } from './models/quarterlyModel';
 import { NgForm } from '@angular/forms';
@@ -8,11 +8,11 @@ import { CalenderModel } from './models/calender';
 import { OportunityInstance } from './models/oppertunityInstance';
 
 @Component({
-  selector: 'app-calender',
-  templateUrl: './calender.component.html',
-  styleUrls: ['./calender.component.css']
+  selector: 'app-calendar',
+  templateUrl: './calendar.component.html',
+  styleUrls: ['./calendar.component.css']
 })
-export class CalenderComponent implements OnInit {
+export class CalendarComponent implements OnInit {
   public start_time = null;
   public end_time = null;
   public message = '';
