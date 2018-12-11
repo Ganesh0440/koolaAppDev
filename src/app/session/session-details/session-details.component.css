@@ -30,7 +30,7 @@
     font-weight: 600;
 }
 .session-details-paras {
-    font-size: 1.125em;
+    font-size: 1.12em;
     color: #808080;
     padding: 0.8rem 0.3rem 0.8rem 0; 
 }
@@ -52,7 +52,7 @@
 }
 .coach-exp {
     padding: 0.6rem 1rem 0.8rem 0;
-    width: 33.3%;
+    width: 38.3%;
     margin-right: 1rem;
 }
 .sport-organised {
@@ -62,7 +62,7 @@
 }
 .user-rounded-img {
     position: relative;
-    width: 40%;
+    width: 35%;
 }
 .user-rounded-img img {
     position: absolute;
@@ -77,9 +77,12 @@
 }
 .mb-32 {
     margin-bottom: 2rem;
+    margin-top: 0.8rem;
 }
 h4 {
     padding-top: 0.7rem;
+    font-size: 1.3em;
+    color: #434343;
 }
 .person-ticket-cost {
     position: relative;
@@ -91,7 +94,7 @@ h4 {
     right: 0;
     font-weight: 630;
     margin-bottom: 0!important;
-    margin-top: 0.7rem;
+    margin-top: 0.4rem;
 }
 .fa-star {
     font-size: 1.3rem;
