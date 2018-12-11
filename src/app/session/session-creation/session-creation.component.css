@@ -19,6 +19,37 @@ input[type="text"].session-title::-webkit-input-placeholder {
     color: #808080;
     padding: 0.8rem 0.3rem 0.8rem 0; 
 }
+.session-locations p {
+    font-weight: 640;
+}
+.session-location-map {
+    margin-top: 1.5rem;
+}
+/* .flooring p {
+    margin-bottom: 0.5em;
+} */
+.mar-top-8 {
+    margin-top: 1rem;
+}
+.mar-t-b {
+    margin: 2rem 0 2rem 1rem;
+}
+.mar-t-b p {
+    margin-bottom: 0.3em;
+}
+.mar-t-b small {
+    font-size: 100%;
+    color: #b3b3b3;
+}
+.age div:nth-child(2) {
+    margin-top: 1rem;
+}
+.type {
+    margin-bottom: 0;
+}
+.type-heading {
+    display: inline;
+}
  
  /* Radio buttons*/
  .radiocontainer {
@@ -44,7 +75,7 @@ input[type="text"].session-title::-webkit-input-placeholder {
   /* Create a custom radio button */
   .radiocheckmark {
     position: absolute;
-    top: 9px;
+    top: 3px;
     left: 0;
     height: 22px;
     width: 22px;
@@ -54,7 +85,7 @@ input[type="text"].session-title::-webkit-input-placeholder {
      box-shadow: 0 .125rem .50rem rgba(0,0,0,0.2)!important; 
   }
   
-  /* When the radio button is checked, add a blue background */
+  /* When the radio button is checked, add a white background */
   .radiocontainer input:checked ~ .radiocheckmark {
     background-color: #ffffff;
   }
@@ -79,6 +110,12 @@ input[type="text"].session-title::-webkit-input-placeholder {
       height: 15px;
       border-radius: 50%;
       background: #ffce00;
+  }
+  .margin-r-4 {
+      margin-right: 4rem;
+  }
+  .margin-r-4-3 {
+      margin-right: 3.33rem;
   }
   /* Custom Checkboxes */
   .Checkboxcontainer {
@@ -112,9 +149,6 @@ input[type="text"].session-title::-webkit-input-placeholder {
     width: 25px;
     box-shadow: 0 .125rem .50rem rgba(0,0,0,0.2)!important;
   }
-  
-  
-  
   /* When the checkbox is checked, add a blue background */
   .Checkboxcontainer input:checked ~ .checkboxCheckmark {
     background-color: #ffffff;
