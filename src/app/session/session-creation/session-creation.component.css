@@ -3,21 +3,101 @@
     color: #656565;
 }
 .option-1 {
-    font-size: rem;
+    font-size: 1rem;
     color: #d9d9d9;
 }
+.inlinelining {
+    display: inline-block!important;
+}
+.inlinelining p {
+    display: inline!important;
+    vertical-align: top;
+}
+.inlinelining select {
+    display: inline!important;
+    /* margin-top : 4px; */
+    vertical-align: top;
+}
+
 input[type="text"].session-title::-webkit-input-placeholder {
     color: #d8d8d8;
     font-size: 1.3rem;
     font-weight: 500;
   }
  textarea,.selectWrapper,input {
-     box-shadow: 0 .125rem 0.8rem rgba(0,0,0,0.2)!important;
+     /* box-shadow: 0 .125rem 0.8rem rgba(0,0,0,0.2)!important; */
+     box-shadow: 0 0 12px rgba(0,0,0,0.2);
  }
  .session-details-paras {
     font-size: 1.125em;
     color: #808080;
     padding: 0.8rem 0.3rem 0.8rem 0; 
+}
+.crossed-icons img {
+    width: 10%;
+    height: 10%;
+    margin: 0 0.6rem 0.6rem 0.6rem;
+    padding-top: 0.5rem;
+}
+.mar-b {
+    margin: 2rem 0 0rem 0rem;
+} 
+.mar-top-bot-1 {
+    margin-top: 1rem 0 1rem 0rem;
+}
+.mar-top-bot-1 p {
+    margin-bottom: 1.5em;
+}
+.gender {
+    margin: 2rem 0;
+}
+.gender-heading {
+    margin-right: 1.5rem;
+}
+.gender p {
+    margin-bottom: 0.4rem!important;
+}
+.gender small {
+    color: #b3b3b3;
+    font-size: 85%;
+    font-weight: 450;
+}
+.gender-images {
+    margin-left: 1rem;
+}
+.session-locations p {
+    font-weight: 640;
+}
+.session-location-map {
+    margin-top: 1.5rem;
+}
+/* .flooring p {
+    margin-bottom: 0.5em;
+} */
+.mar-top-8 {
+    margin-top: 1rem;
+}
+.mar-t-b {
+    margin: 2rem 0 2rem 0rem;
+}
+.mar-t-b p {
+    margin-bottom: 0.3em;
+}
+.mar-t-b small {
+    font-size: 100%;
+    color: #b3b3b3;
+}
+.para-bot-padding {
+    padding-bottom: 1rem;
+}
+.age div:nth-child(2) {
+    margin-top: 1rem;
+}
+.type {
+    margin-bottom: 0;
+}
+.type-heading {
+    display: inline;
 }
  
  /* Radio buttons*/
@@ -44,7 +124,7 @@ input[type="text"].session-title::-webkit-input-placeholder {
   /* Create a custom radio button */
   .radiocheckmark {
     position: absolute;
-    top: 9px;
+    top: 3px;
     left: 0;
     height: 22px;
     width: 22px;
@@ -54,7 +134,7 @@ input[type="text"].session-title::-webkit-input-placeholder {
      box-shadow: 0 .125rem .50rem rgba(0,0,0,0.2)!important; 
   }
   
-  /* When the radio button is checked, add a blue background */
+  /* When the radio button is checked, add a white background */
   .radiocontainer input:checked ~ .radiocheckmark {
     background-color: #ffffff;
   }
@@ -79,6 +159,12 @@ input[type="text"].session-title::-webkit-input-placeholder {
       height: 15px;
       border-radius: 50%;
       background: #ffce00;
+  }
+  .margin-r-4 {
+      margin-right: 4rem;
+  }
+  .margin-r-4-3 {
+      margin-right: 3.33rem;
   }
   /* Custom Checkboxes */
   .Checkboxcontainer {
@@ -112,9 +198,6 @@ input[type="text"].session-title::-webkit-input-placeholder {
     width: 25px;
     box-shadow: 0 .125rem .50rem rgba(0,0,0,0.2)!important;
   }
-  
-  
-  
   /* When the checkbox is checked, add a blue background */
   .Checkboxcontainer input:checked ~ .checkboxCheckmark {
     background-color: #ffffff;

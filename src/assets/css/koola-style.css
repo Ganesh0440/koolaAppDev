@@ -1,8 +1,8 @@
 body {
 	margin: 0 5rem 0 3rem!important;
 	padding-top: 0px;    
-    font-family: raleway, sans-serif;
-    /* font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+    font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", "Montserrat",Helvetica, sans-serif;
+    font-weight: 300;
     /* font-size: 1em!important; */
     line-height: 1.3!important;
     box-sizing: border-box;
@@ -78,6 +78,10 @@ label {
     outline: none;
     border: none!important;
     color: #ffdc63!important;
+}
+.mb-32 {
+    margin-bottom: 2rem;
+    margin-top: 0.8rem;
 }
 .session-title {
     padding-bottom: 8px!important;
@@ -166,10 +170,7 @@ textarea:focus {
       background-color: #ffce00!important;
       border: none!important;
   }
-  /* .footer-mr {
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
-  } */
+ 
   .footer-copyrights {
       margin: 1.6rem 0 1.6rem 0.5rem;
       color: #cecece;
