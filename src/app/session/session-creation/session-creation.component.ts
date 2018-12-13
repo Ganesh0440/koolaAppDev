@@ -25,14 +25,14 @@ export class SessionCreationComponent implements OnInit {
     });
   }
 
-  public saveToDraft(event) {
-
+  public saveToDraft(event, term: string) {
+    this.router.navigate(['session-details', { term: term }]);
   }
-  public sessionPreview(event) {
-    this.router.navigate(['session-details']);
+  public sessionPreview(event, term: string) {
+    this.router.navigate(['session-details', { term: term }]);
   }
-  public publishSession(event) {
-
+  public publishSession(event, term: string) {
+    this.router.navigate(['session-details', { term: term }]);
   }
 
 

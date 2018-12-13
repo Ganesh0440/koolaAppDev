@@ -36,7 +36,9 @@
         <div class="basic-strategy" id="basicStrategy">
           <div class="d-inline">
             <h3>Foot Ball - Basic Strategy</h3>
-            <button class="btn btn-lg btn-light edit-btn" id="edit">EDIT</button>
+            <div *ngIf="isValid; then showValue else hideVlaue"></div>
+            <ng-template #showValue><button class="btn btn-lg btn-light edit-btn" id="edit">EDIT</button></ng-template>
+            <ng-template #hideVlaue><button class="btn btn-lg btn-light edit-btn" id="edit">testing</button></ng-template>
           </div>
           <div class="">
             <p class="session-details-para-font training">Join a training of Foot ball & play a post training game.</p>
@@ -137,7 +139,11 @@
           </ul>
         </div>
         <div class="session-happening">
-          <app-calendar></app-calendar>
+          <div *ngIf="isValid; then calendarShow"></div>
+          <ng-template #calendarShow>
+            <app-calendar></app-calendar>
+          </ng-template>
+
         </div>
       </div>
     </div>
