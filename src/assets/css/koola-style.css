@@ -170,10 +170,7 @@ textarea:focus {
       background-color: #ffce00!important;
       border: none!important;
   }
-  /* .footer-mr {
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
-  } */
+ 
   .footer-copyrights {
       margin: 1.6rem 0 1.6rem 0.5rem;
       color: #cecece;
