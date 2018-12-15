@@ -103,7 +103,6 @@ h4 {
 .session-location-map {
     height:373px; 
     width:100%;
-    border: 1px solid black;
 }
 .custom-breadcrumb {
     display: flex;

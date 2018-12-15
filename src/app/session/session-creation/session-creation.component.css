@@ -6,7 +6,13 @@
     font-size: 1rem;
     color: #d9d9d9;
 }
-.inlinelining {
+.pl-40 {
+    padding-left: 2.5rem;
+}
+.pr-40 {
+    padding-right: 2.5rem;
+}
+/* .inlinelining {
     display: inline-block!important;
 }
 .inlinelining p {
@@ -15,15 +21,22 @@
 }
 .inlinelining select {
     display: inline!important;
-    /* margin-top : 4px; */
+    margin-top : 4px;
     vertical-align: top;
-}
+} */
 
 input[type="text"].session-title::-webkit-input-placeholder {
     color: #d8d8d8;
-    font-size: 1.3rem;
+    font-size: 2rem!important;
     font-weight: 500;
   }
+input[type="text"].thumbnail-search::-webkit-input-placeholder,
+input[type="text"].description-about-coach::-webkit-input-placeholder,
+ {
+    color: #dedede;
+    /* font-size: 1.3rem; */
+    /* font-weight: 500; */
+}
  textarea,.selectWrapper,input {
      /* box-shadow: 0 .125rem 0.8rem rgba(0,0,0,0.2)!important; */
      box-shadow: 0 0 12px rgba(0,0,0,0.2);
@@ -32,6 +45,9 @@ input[type="text"].session-title::-webkit-input-placeholder {
     font-size: 1.125em;
     color: #808080;
     padding: 0.8rem 0.3rem 0.8rem 0; 
+}
+.session-title {
+    margin-top: 1rem;
 }
 .crossed-icons img {
     width: 10%;
@@ -47,6 +63,9 @@ input[type="text"].session-title::-webkit-input-placeholder {
 }
 .mar-top-bot-1 p {
     margin-bottom: 1.5em;
+}
+.coach-exp,.coach-assistCoach {
+    border: none;
 }
 .gender {
     margin: 2rem 0;
@@ -67,6 +86,8 @@ input[type="text"].session-title::-webkit-input-placeholder {
 }
 .session-locations p {
     font-weight: 640;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
 }
 .session-location-map {
     margin-top: 1.5rem;
@@ -96,7 +117,7 @@ input[type="text"].session-title::-webkit-input-placeholder {
 .type {
     margin-bottom: 0;
 }
-.type-heading {
+.type-title {
     display: inline;
 }
  
@@ -227,3 +248,41 @@ input[type="text"].session-title::-webkit-input-placeholder {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+.thumbnail-title {
+    margin-bottom: 1rem;
+}
+.mar-t-thumbnail-title {
+    margin-top: 1rem;
+}
+
+.thumbnail-img img {
+    margin: 1rem 1.6rem 0.6rem 0.6rem;
+    border-radius: 11%;
+    padding: 1.01rem;
+    /* height: ;
+    width: ; */
+}
+.sessions-block {
+    display: inline-block;
+}
+.card-block {
+    border: 0;
+    padding-right: 1.3rem;
+}
+.card-block img {
+    border-radius: 2%;
+}
+.card-body-pl {
+    padding-left: 0;
+}
+.card-body-pl h6 {
+    font-weight: 650;
+}
+.card-text-para {
+    font-weight: 700;
+    font-size: 1.4em;
+    line-height: 1.1;
+}
+.card-body-pl p {
+    font-size: 1.1em;
+}
