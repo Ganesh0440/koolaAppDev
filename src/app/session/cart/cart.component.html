@@ -1,3 +1,180 @@
-<p>
-  cart works!
-</p>
+<nav class="navbar navbar-expand-lg">
+  <div class="logo">
+      <a class="navbar-brand logo" href="">Koola</a>
+  </div>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+      <form method="">
+          <div class="form-group input-group mb-3">
+              <input type="search" class="form-control nav-searchbox" placeholder="Search for sport,place,level and organisation..">
+              <!-- <span>&#XF130;</span> -->
+              <span class="input-group-addon">
+                  <i class="fa fa-microphone"></i>
+                  <span class="search-btn-padding">
+                      <button type="submit" class="btn btn-sm search-btn">Search</button>
+                  </span>
+              </span>
+          </div>
+      </form>
+
+  </div>
+
+  <div class="nav-item">
+      <a class="nav-link" href="#">Help</a>
+  </div>
+  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+</nav>
+<!-- End of Navigation -->
+
+<div class="container-fluid">
+<div class="row">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <h3>Items</h3>
+    <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+      <img src="cart-football.jpeg" alt="">
+      <h2>Foot Ball - Basic strategy</h2>
+      <p>April 26, 2018 # 4:00 PM - 5:00 PM</p>
+      <i class="fa fa-map-marker" aria-hidden="true"></i>
+      <p>MMC Football grounds, Muthuswamy Rd, Park Town, Chennai,Tamil Nadu 600003</p>
+    </div>
+    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+      <p>$120</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+    <h3>Billing Address</h3>
+    <form method="" >
+      <div class="form-row">
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control billing-address-fname" id="" placeholder="Your First Name">
+          </div>
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control billing-address-lname" id="" placeholder="Your Last Name">
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group col-md-6">
+            <input type="email" class="form-control billing-address-email" id="" placeholder="Your Email">
+          </div>
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control billing-address-number" id="" placeholder="Your Number">
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control billing-address" id="" placeholder="Address">
+          </div>
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control billing-address" id="" placeholder="Landmark">
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group col-md-6">
+              <select class="form-control billing-address-state" id="">
+            <option selected>Select State</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          </div>
+          <div class="form-group col-md-6">
+            <select class="form-control billing-address-country" id="">
+            <option selected>Select Country</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group col-md-6">
+              <input type="text" class="form-control billing-address-pincode" id="" placeholder="Pincode">
+          </div>
+          <div class="form-group col-md-6">
+           <button type="button" class="btn btn-small">SAVE ADDRESS</button>
+          </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-6 col-lg-6 col-xl-6">
+    <h3>Payment</h3>
+    <form method="" >
+      <ul class="nav nav-pills" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="pill" href="#creditCard">Credit Card</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#debitCard">Debit Card</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#paytm">PayTM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#paypal">PayPal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#directBank">Direct Bank</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#cashOnDelivery">Cash on delivery</a>
+          </li>
+      </ul>
+        <div class="tab-content">
+          <div id="creditCard" class="container tab-pane active"><br>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <input type="text" class="form-control credit-card-digits" id="" placeholder="Enter Your 16 digits">
+              </div>
+            </div>	
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                  <input type="text" class="form-control name-on-card" id="" placeholder="Enter Name on Your Card">
+                </div>
+            </div>
+          
+            <div class="form-group row">
+                <label for="expiry-date" class="col-md-2 col-form-label">Expiry Date</label>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="expiry-date" placeholder="DD/MM">
+                </div>
+                <label for="cvv" class="col-md-2 col-form-label">CVV</label>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="cvv" placeholder="">
+                </div>
+            </div>
+          </div>
+      
+
+          <div id="debitCard" class="container tab-pane fade"><br>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <input type="text" class="form-control debit-card-digits" id="" placeholder="Enter Your 16 digits">
+              </div>
+            </div>	
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                  <input type="text" class="form-control name-on-card" id="" placeholder="Enter Name on Your Card">
+                </div>
+            </div>
+          
+            <div class="form-group row">
+                <label for="expiry-date" class="col-md-2 col-form-label">Expiry Date</label>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="expiry-date" placeholder="DD/MM">
+                </div>
+                <label for="cvv" class="col-md-2 col-form-label">CVV</label>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="cvv" placeholder="">
+                </div>
+            </div>
+          </div>
+
+        </div>
+      <button type="" class="btn btn-small">PAY</button>
+    </form>	
+  </div>
+</div>
+</div>

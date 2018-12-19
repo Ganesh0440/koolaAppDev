@@ -2,15 +2,11 @@
     font-size: 1.25rem;
     color: #656565;
 }
-.option-1 {
-    font-size: 1rem;
-    color: #d9d9d9;
-}
 .pl-40 {
-    padding-left: 2.4rem;
+    padding-left: 2.7rem;
 }
 .pr-40 {
-    padding-right: 2.5rem;
+    padding-right: 2.7rem;
 }
 /* .inlinelining {
     display: inline-block!important;
@@ -24,7 +20,6 @@
     margin-top : 4px;
     vertical-align: top;
 } */
-
 input[type="text"].session-title::-webkit-input-placeholder {
     color: #d8d8d8;
     font-size: 2rem!important;
@@ -37,10 +32,7 @@ input[type="text"].description-about-coach::-webkit-input-placeholder,
     /* font-size: 1.3rem; */
     /* font-weight: 500; */
 }
- textarea,.selectWrapper,input {
-     /* box-shadow: 0 .125rem 0.8rem rgba(0,0,0,0.2)!important; */
-     box-shadow: 0 0 12px rgba(0,0,0,0.2);
- }
+ 
  .session-details-paras {
     font-size: 1.125em;
     color: #808080;
@@ -49,23 +41,58 @@ input[type="text"].description-about-coach::-webkit-input-placeholder,
 .session-title {
     margin-top: 1rem;
 }
-.crossed-icons img {
-    width: 10%;
-    height: 10%;
+.user-rounded-img {
+    width: 85px;
+    height: 85px;
+}
+.img-wrap img{
+    width: 65px;
+    height: 75px;
     margin: 0 0.6rem 0.6rem 0.6rem;
-    padding-top: 0.5rem;
+    padding-top: 0.5rem;    
+}
+.crossed-icons .img-wrap {
+    position: relative;
+}
+.img-wrap .close-btn {
+    position: absolute;
+    top: -12px;
+    left: 50px;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 33px;
+    color: #1a1a1a;
+    font-weight: 200;
+    /* float: left; */
+}
+.crossbtn-bg{
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    position: absolute;
+    top:1px;
+    left: 48px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 16px -2px rgba(0,0,0,0.2);
+    box-shadow: 0 0 16px -2px rgba(0,0,0,0.2); 
 }
 .mar-b {
     margin: 2rem 0 0rem 0rem;
 } 
 .mar-top-bot-1 {
-    margin-top: 1rem 0 1rem 0rem;
+    margin: 1rem 0 1rem 0rem;
 }
 .mar-top-bot-1 p {
     margin-bottom: 1.5em;
 }
 .coach-exp,.coach-assistCoach {
     border: none;
+    font-size: 1.25rem;
+    width: 123px;
+}
+.assistCoach p,.assistCoach select {
+    display: inline;
+    /* margin-bottom: 1.3rem; */
 }
 .gender {
     margin: 2rem 0;
@@ -175,7 +202,7 @@ input[type="text"].description-about-coach::-webkit-input-placeholder,
   /* Style the indicator (dot/circle) */
   .radiocontainer .radiocheckmark:after {
        top: 3px;
-      left: 3px;
+      left: 2.5px;
       width: 15px;
       height: 15px;
       border-radius: 50%;
@@ -285,4 +312,70 @@ input[type="text"].description-about-coach::-webkit-input-placeholder,
 }
 .card-body-pl p {
     font-size: 1.1em;
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .session-creation-h-paras {
+        font-size: 0.92rem!important;
+    }
+    input[type="text"].session-title::-webkit-input-placeholder {
+        font-size: 1.2rem!important;
+        font-weight: 500;
+      }
+    .user-rounded-img {
+        width: 65px;
+        height: 65px;
+    }
+    .mar-t-b small {
+        font-size: 81%;
+    }
+    .draft-btn, .preview-btn, .publish-btn, .edit-btn {
+        font-size: 0.7rem!important;
+    }
+    .img-wrap img {
+        width: 45px;
+        height: 54px;
+    }
+    .session-details-paras[_ngcontent-c3] {
+        font-size: 1em;
+    }
+    .crossbtn-bg {
+        height: 22px;
+        width: 22px;
+        position: absolute;
+        top: 1px;
+        left: 42px;
+    }
+    .img-wrap .close-btn {
+        position: absolute;
+        top: -8px;
+        left: 45px;
+        z-index: 100;
+        cursor: pointer;
+        font-size: 27px;
+    }
+    .margin-r-4 {
+        margin-right: 0.1rem;
+    }
+    .margin-r-4-3[_ngcontent-c3] {
+        margin-right: 1.33rem;
+    }
+    /* Radio buttons*/
+ .radiocontainer {    
+    font-size: 15px;    
+  }
+  .Checkboxcontainer {
+    font-size: 15px;
+  }
+  .checkboxCheckmark[_ngcontent-c3] {
+    height: 22px;
+    width: 22px;
+  }
+
 }

@@ -1,9 +1,9 @@
 body {
     margin: 0 5rem 0 3rem!important;
     padding-top: 0px;    
-      font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", "Montserrat",Helvetica, sans-serif;
+      font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", "Montserrat",Helvetica, Arial,sans-serif;
       font-weight: 300;
-      /* font-size: 1em!important; */
+      font-size: 1rem!important;
       line-height: 1.3!important;
       box-sizing: border-box;
       /* opacity: 0.9; */
@@ -21,6 +21,14 @@ body {
   label {
     margin-bottom: 40px;
   }
+.selectBox-color {
+    font-size: 1rem!important;
+    color: #d9d9d9!important;
+}
+    option:not(:first-of-type) {
+        color: black;
+    }
+  
   .selectWrapper {
       -webkit-border-radius: 40px;
       -moz-border-radius: 40px;
@@ -35,7 +43,7 @@ body {
     .selectBox {
       width: 100%;
       height: calc(4rem + 2px)!important;
-      border: 0px!important;
+      border: none!important;
       outline: none;
       /* padding: 2rem .75rem!important; */
     }
@@ -60,9 +68,9 @@ body {
     .search-btn-padding {
         padding: 5px 10px 7px 10px;
         border-top-style: solid;
-      border-right-style: solid!important;
-      border-bottom-style: solid;
-      border-left-style: none;
+        border-right-style: solid!important;
+        border-bottom-style: solid;
+        border-left-style: none;
         border-width: 1px 1px 1px 0;
         border-color: #d2d8dd!important;
         margin-left: -0.3rem;
@@ -74,7 +82,7 @@ body {
       background-color: #ffce00!important;
   }
   .yellow-text {
-      color: #ffdb48;
+      color: #ffdb48!important;
   }
   .coach-assistCoach {
       outline: none;
@@ -95,21 +103,24 @@ body {
       border-radius: 0!important;
       box-shadow: none!important;  
   }
-  
+textarea,.selectWrapper,input {
+    box-shadow: 0 0 16px -2px rgba(0,0,0,0.2);
+    border: none!important;
+}
   input[type="text"].ticket-cost:focus,
   input[type="text"].thumbnail-search:focus,
   input[type="search"].nav-searchbox:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none!important;
-    outline: 0!important;
+    -webkit-box-shadow: 0 0 16px -2px rgba(0,0,0,0.2);
+    box-shadow: 0 0 16px -2px rgba(0,0,0,0.2);
+    outline: 0 none!important;
     border-color: #dde1e5!important;
   }
   textarea:focus {
-      -webkit-box-shadow: none;
-    box-shadow: none!important;
-    outline: 0!important;
+    -webkit-box-shadow: 0 0 16px -2px rgba(0,0,0,0.2)!important;
+    box-shadow: 0 0 16px -2px rgba(0,0,0,0.2)!important;
+    outline: 0 none!important;
     border-color: #dde1e5!important;   
-  }
+  } 
   .add-coach-btn {
       background-color: #fff;
       border: 1px solid #bbbdbe!important;
@@ -144,12 +155,7 @@ body {
         border-radius: 1rem!important;
         resize: none;
     }
-    textarea .br-1:focus {
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      outline: 0!important;
-      border-color: #dde1e5!important;
-    }
+    
     .draft-btn,.preview-btn,.publish-btn,.edit-btn {
       font-size: 1.25rem!important;
       line-height: 1.5!important;
