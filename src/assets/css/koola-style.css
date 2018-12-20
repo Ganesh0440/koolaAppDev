@@ -121,7 +121,7 @@ textarea,.selectWrapper,input {
     outline: 0 none!important;
     border-color: #dde1e5!important;   
   } 
-  .add-coach-btn {
+  .add-coach-btn,.cart-save-btn,.cart-pay-btn {
       background-color: #fff;
       border: 1px solid #bbbdbe!important;
       border-radius: 30px!important;

@@ -1,0 +1,114 @@
+.pl-25 {
+    padding-left: 1.5em!important;
+}
+.pl-25 h3{
+    padding-bottom: 1.3em;
+}
+.cart-strategy-content {
+    position: relative;
+}
+.cart-crossbtn-bg{
+    height: 45px;
+    width: 45px;
+    background-color: #db5454;
+    position: absolute;
+    top: -20px;
+    left: -24px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 16px -2px rgba(0,0,0,0.2);
+    box-shadow: 0 0 16px -2px rgba(0,0,0,0.2); 
+    z-index: 99;
+}
+.cart-close-btn {
+    position: absolute;
+    top: -29px;
+    left: -15px;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 39px;
+    color: #fff;
+    font-weight: 100;
+}
+.cart-strategy-content {
+    margin-left: 5em;
+    margin-bottom: 3em;
+    box-shadow: 0 0 16px -2px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.cart-strategy-img {
+    padding: 1em 0em 1em 1em !important;
+    /* max-width: 11.666667%!important; */
+}
+.cart-img-br-10 {
+    border-radius: 10%;
+}
+.cart-sports-schedule {
+    margin: 1em 0;
+    padding-left: 0
+}
+.cart-timings {
+    font-size: 0.8em;
+}
+.cart-strategy-location i  {
+    font-size: 2.1em;   
+}
+.cart-strategy-location p{
+    display: inline;    
+}
+.cart-value {
+    background-color: #ffce00;
+    color: #fff;
+    padding: 1.01em;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.cart-value p {
+    font-size: 5em;
+    font-weight: 700;
+    /* padding: 1em; */
+}
+
+/* row 2 Billing & Payment*/
+
+.margin-2 {
+    margin: -2px -45px 2em -9px;
+}
+input,select {
+    border-bottom: 1px solid black!important;
+    box-shadow: none!important;
+    border-radius: 0;
+    border-top:none!important;
+    border-right:none!important;
+    border-left:none!important;
+}
+.cart-save-btn {
+        font-size: 0.8em!important;
+        padding: 4px!important;
+        letter-spacing: 1px;
+        float: right;
+}
+.nav-item a {
+    color: #828282!important;
+    font-size: 12px;
+}
+.active-tab-btn {
+    background-color: #fff!important;
+    -webkit-box-shadow: 0 0 16px -2px rgba(0,0,0,0.2);
+    box-shadow: 0 0 16px -2px rgba(0,0,0,0.2);
+    color: #828282!important;
+    border-radius: 30px;
+    height: 45px;
+    width: 130px;
+    font-size: 12px;
+    padding: 14px 34px;
+}
+.tab-content-active-link {
+    background-color: #fff!important;
+}
+.cart-pay-btn {
+    float: right;
+    background-color: #ffce00;
+    font-size: 1em!important;
+    border: none!important;
+}
